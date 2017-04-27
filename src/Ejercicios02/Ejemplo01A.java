@@ -22,13 +22,13 @@ public class Ejemplo01A {
         System.out.print("Ingrese el monto de la venta realizada: ");
         venta = sc.nextDouble();
         
-        if (zona.equals("Norte") || zona.equals("norte")) {
+        if (zona.equalsIgnoreCase("norte")) {
             comision=venta*10/100;
         }
-        else if(zona.equals("Centro") || zona.equals("centro")){
+        else if(zona.equalsIgnoreCase("centro")){
             comision=venta*15/100;
         }
-        else if(zona.equals("Sur") || zona.equals("sur")){
+        else if(zona.equalsIgnoreCase("sur")){
             comision=venta*30/100;
         }
         System.out.println("La comision de la venta es: "+ comision);
